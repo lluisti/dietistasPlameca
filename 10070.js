@@ -13,12 +13,12 @@ var ARG_FECHA_VISITA = 'Fecha visita';
 
 // Librerias
 var LIB_PERSONAL = 'Personal'
-var LIB_CENTROS = 'Centros';
-var LIB_FICHA = 'Ficha';
-var LIB_VISITA = 'Control visita';
+var LIB_CENTROS = 'Centros 10070';
+var LIB_FICHA = 'Ficha 10070';
+var LIB_VISITA = 'Control visita 10070';
 var LIB_PRESION = 'Presión arterial';
-var LIB_COMPLEMENTO_ASIGNADO = 'Complementos asignados';
-var LIB_DIETA_ASIGNADA = 'Dietas asignadas';
+var LIB_COMPLEMENTO_ASIGNADO = 'Complementos asignados 10070';
+var LIB_DIETA_ASIGNADA = 'Dietas asignadas 10070';
 
 // Campos generales - Todas las librerias los tienen
 var CAMPO_NUM_REG = 'numReg';

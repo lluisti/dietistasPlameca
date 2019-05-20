@@ -38,7 +38,7 @@ var LIB_FICHA_CAMPO_SITUACION = 'Situación';
 var LIB_FICHA_CAMPO_MEDICIONES_PRESION_ARTERIAL = 'Mediciones Presión arterial';
 var LIB_FICHA_CAMPO_VISITA = 'Visita';
 var LIB_FICHA_CAMPO_IDCENTRO = 'idCentro';
-var LIB_FICHA_CAMPO_IDDIETISTA = 'iddietista';
+//var LIB_FICHA_CAMPO_IDDIETISTA = 'iddietista';
 
 // Visita
 var LIB_VISITA_CAMPO_DFICHPACIENTE = 'dFichPaciente';
@@ -159,7 +159,7 @@ function completarDietaAsignada(visita, dietaAsignada, entradaMaestro) {
 }
 
 function crearFicha(objetoEntrada, entradaPadre, campoLinkPadre, entradaMaestro) {
-    return crearEntrada(LIB_FICHA, objetoEntrada, completarFicha, LIB_FICHA_CAMPO_IDCENTRO, entradaPadre, campoLinkPadre, entradaMaestro, LIB_FICHA_CAMPO_IDDIETISTA);
+    return crearEntrada(LIB_FICHA, objetoEntrada, completarFicha, LIB_FICHA_CAMPO_IDCENTRO, entradaPadre, campoLinkPadre, entradaMaestro);//, LIB_FICHA_CAMPO_IDDIETISTA);
 }
 
 function crearVisita(objetoEntrada, entradaPadre, campoLinkPadre, entradaMaestro) {

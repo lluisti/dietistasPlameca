@@ -159,7 +159,7 @@ function completarDietaAsignada(visita, dietaAsignada, entradaMaestro) {
 }
 
 function crearFicha(objetoEntrada, entradaPadre, campoLinkPadre, entradaMaestro) {
-    return crearEntrada(LIB_FICHA, objetoEntrada, completarFicha, LIB_FICHA_CAMPO_IDCENTRO, entradaPadre, campoLinkPadre, entradaMaestro, LIB_FICHA_CAMPO_IDDIETISTA);
+    return crearEntrada(LIB_FICHA, objetoEntrada, completarFicha, LIB_FICHA_CAMPO_IDCENTRO, entradaPadre, campoLinkPadre, entradaMaestro//, LIB_FICHA_CAMPO_IDDIETISTA);
 }
 
 function crearVisita(objetoEntrada, entradaPadre, campoLinkPadre, entradaMaestro) {

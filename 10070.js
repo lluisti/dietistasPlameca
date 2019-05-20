@@ -219,7 +219,7 @@ function accionCentroCrearFicha(centro) {
 
     var funcionCrearEntrada = crearFicha;
     var campoLink = LIB_CENTROS_CAMPO_FICHA_CLIENTE;
-    var entradaMaestro = getField(centro, LIB_CENTROS_CAMPO_IDDIETISTA)[0];
+    //var entradaMaestro = getField(centro, LIB_CENTROS_CAMPO_IDDIETISTA)[0];
 
     accionCrearEntrada(centro, funcionCrearEntrada, campoLink, entradaMaestro);
 }
@@ -232,7 +232,7 @@ function accionFichaCrearVisita(ficha) {
 
     var funcionCrearEntrada = crearVisita;
     var campoLink = LIB_FICHA_CAMPO_VISITA;
-    var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
+   // var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
 
     var visita = accionCrearEntrada(ficha, funcionCrearEntrada, campoLink, entradaMaestro);
 
@@ -255,7 +255,7 @@ function accionFichaCrearPresion(ficha) {
 
     var funcionCrearEntrada = crearPresion;
     var campoLink = LIB_FICHA_CAMPO_MEDICIONES_PRESION_ARTERIAL;
-    var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
+  //  var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
 
     accionCrearEntrada(ficha, funcionCrearEntrada, campoLink, entradaMaestro);
 }
@@ -267,7 +267,7 @@ function accionVisitaCrearComplementoAsignado(visita) {
 
     var funcionCrearEntrada = crearComplementoAsignado;
     var campoLink = LIB_VISITA_CAMPO_COMPLEMENTOS_PRESCRITOS;
-    var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
+ //   var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
 
     accionCrearEntrada(visita, funcionCrearEntrada, campoLink, entradaMaestro);
 }
@@ -279,7 +279,7 @@ function accionVisitaCrearDietaAsignada(visita) {
 
     var funcionCrearEntrada = crearDietaAsignada;
     var campoLink = LIB_VISITA_CAMPO_DIETA_ASIGNADA;
-    var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
+  //  var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
 
     accionCrearEntrada(visita, funcionCrearEntrada, campoLink, entradaMaestro);
 }

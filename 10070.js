@@ -38,7 +38,7 @@ var LIB_FICHA_CAMPO_SITUACION = 'Situación';
 var LIB_FICHA_CAMPO_MEDICIONES_PRESION_ARTERIAL = 'Mediciones Presión arterial';
 var LIB_FICHA_CAMPO_VISITA = 'Visita';
 var LIB_FICHA_CAMPO_IDCENTRO = 'idCentro';
-//var LIB_FICHA_CAMPO_IDDIETISTA = 'iddietista';
+var LIB_FICHA_CAMPO_IDDIETISTA = 'iddietista';
 
 // Visita
 var LIB_VISITA_CAMPO_DFICHPACIENTE = 'dFichPaciente';
@@ -159,7 +159,7 @@ function completarDietaAsignada(visita, dietaAsignada, entradaMaestro) {
 }
 
 function crearFicha(objetoEntrada, entradaPadre, campoLinkPadre, entradaMaestro) {
-    return crearEntrada(LIB_FICHA, objetoEntrada, completarFicha, LIB_FICHA_CAMPO_IDCENTRO, entradaPadre, campoLinkPadre, entradaMaestro//, LIB_FICHA_CAMPO_IDDIETISTA);
+    return crearEntrada(LIB_FICHA, objetoEntrada, completarFicha, LIB_FICHA_CAMPO_IDCENTRO, entradaPadre, campoLinkPadre, entradaMaestro, LIB_FICHA_CAMPO_IDDIETISTA);
 }
 
 function crearVisita(objetoEntrada, entradaPadre, campoLinkPadre, entradaMaestro) {
@@ -232,7 +232,7 @@ function accionFichaCrearVisita(ficha) {
 
     var funcionCrearEntrada = crearVisita;
     var campoLink = LIB_FICHA_CAMPO_VISITA;
-   // var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
+    var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
 
     var visita = accionCrearEntrada(ficha, funcionCrearEntrada, campoLink, entradaMaestro);
 
@@ -255,7 +255,7 @@ function accionFichaCrearPresion(ficha) {
 
     var funcionCrearEntrada = crearPresion;
     var campoLink = LIB_FICHA_CAMPO_MEDICIONES_PRESION_ARTERIAL;
-  //  var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
+    var entradaMaestro = getField(ficha, LIB_FICHA_CAMPO_IDDIETISTA)[0];
 
     accionCrearEntrada(ficha, funcionCrearEntrada, campoLink, entradaMaestro);
 }
@@ -267,7 +267,7 @@ function accionVisitaCrearComplementoAsignado(visita) {
 
     var funcionCrearEntrada = crearComplementoAsignado;
     var campoLink = LIB_VISITA_CAMPO_COMPLEMENTOS_PRESCRITOS;
- //   var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
+    var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
 
     accionCrearEntrada(visita, funcionCrearEntrada, campoLink, entradaMaestro);
 }
@@ -279,7 +279,7 @@ function accionVisitaCrearDietaAsignada(visita) {
 
     var funcionCrearEntrada = crearDietaAsignada;
     var campoLink = LIB_VISITA_CAMPO_DIETA_ASIGNADA;
-  //  var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
+    var entradaMaestro = getField(visita, LIB_VISITA_CAMPO_DDIETISTA)[0];
 
     accionCrearEntrada(visita, funcionCrearEntrada, campoLink, entradaMaestro);
 }

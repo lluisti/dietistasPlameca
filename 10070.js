@@ -31,7 +31,7 @@ var LIB_PERSONAL_CAMPO_IDPERSONAL = 'idPersonal'
 
 // Centros
 var LIB_CENTROS_CAMPO_FICHA_CLIENTE = 'Ficha cliente';
-//var LIB_CENTROS_CAMPO_IDDIETISTA = 'iddietista';
+var LIB_CENTROS_CAMPO_IDDIETISTA = 'iddietista';
 
 // Ficha
 var LIB_FICHA_CAMPO_SITUACION = 'Situación';

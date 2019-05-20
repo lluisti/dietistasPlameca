@@ -132,7 +132,7 @@ function forEach(coleccion, funcion) {
 }
 
 function completarFicha(centro, ficha, entradaMaestro) {
-    //crearVisita({}, ficha, LIB_FICHA_CAMPO_VISITA, entradaMaestro);
+    crearVisita({}, ficha, LIB_FICHA_CAMPO_VISITA, entradaMaestro);
 }
 
 function completarVisita(ficha, visita, entradaMaestro) {

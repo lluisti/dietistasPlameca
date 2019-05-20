@@ -219,7 +219,7 @@ function accionCentroCrearFicha(centro) {
 
     var funcionCrearEntrada = crearFicha;
     var campoLink = LIB_CENTROS_CAMPO_FICHA_CLIENTE;
-    //var entradaMaestro = getField(centro, LIB_CENTROS_CAMPO_IDDIETISTA)[0];
+    var entradaMaestro = getField(centro, LIB_CENTROS_CAMPO_IDDIETISTA)[0];
 
     accionCrearEntrada(centro, funcionCrearEntrada, campoLink, entradaMaestro);
 }

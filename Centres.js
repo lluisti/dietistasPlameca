@@ -12,10 +12,10 @@ var SITUACION_VISITA_CONCERTADA = 'Visita concertada';
 var ARG_FECHA_VISITA = 'Fecha visita';
 
 // Librerias
-var LIB_PERSONAL = 'Personal'
-var LIB_CENTROS = 'Centros 10040';
-var LIB_FICHA = 'Ficha 10040';
-var LIB_VISITA = 'Control visita 10040';
+var LIB_PERSONAL = 'Delegats'
+var LIB_CENTROS = 'Centres';
+var LIB_FICHA = 'Personal Sanitari';
+var LIB_VISITA = 'Visites';
 var LIB_PRESION = 'Presión arterial';
 var LIB_COMPLEMENTO_ASIGNADO = 'Complementos asignados';
 var LIB_DIETA_ASIGNADA = 'Dietas asignadas';
